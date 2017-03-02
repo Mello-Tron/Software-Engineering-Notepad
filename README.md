@@ -1,4 +1,4 @@
-# Software-Engineering-Notepad
+# Software Engineering Notepad
 A place for me to doodle, experiment, note, learn and store personal ideas for my Software Engineering team project.
 
 ## Resources ##
