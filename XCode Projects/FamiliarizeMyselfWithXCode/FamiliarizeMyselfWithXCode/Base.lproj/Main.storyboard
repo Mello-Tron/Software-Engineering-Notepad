@@ -26,14 +26,25 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
-                                    <barButtonItem systemItem="camera" id="myY-Mw-ZNV"/>
+                                    <barButtonItem systemItem="camera" id="myY-Mw-ZNV">
+                                        <connections>
+                                            <action selector="photoShoot:" destination="BYZ-38-t0r" id="TkQ-J4-KOP"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="flexibleSpace" id="Uvi-Y6-6AI"/>
-                                    <barButtonItem title="Library" id="OZk-Vk-L7F"/>
+                                    <barButtonItem title="Library" id="OZk-Vk-L7F">
+                                        <connections>
+                                            <action selector="photoFromLibrary:" destination="BYZ-38-t0r" id="d1G-cg-ghe"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="myImageView" destination="8bC-Xf-vdC" id="4lB-1W-974"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
