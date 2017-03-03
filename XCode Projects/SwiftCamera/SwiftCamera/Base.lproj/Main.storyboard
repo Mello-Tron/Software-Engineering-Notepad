@@ -28,9 +28,17 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uxg-yi-Qmn">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem systemItem="camera" id="nZZ-US-9bf"/>
+                                    <barButtonItem systemItem="camera" id="nZZ-US-9bf">
+                                        <connections>
+                                            <action selector="shootPhoto:" destination="BYZ-38-t0r" id="dEZ-kJ-bwt"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="flexibleSpace" id="flx-zX-uhE"/>
-                                    <barButtonItem title="Library" id="F23-cO-kwi"/>
+                                    <barButtonItem title="Library" id="F23-cO-kwi">
+                                        <connections>
+                                            <action selector="photoFromLibrary:" destination="BYZ-38-t0r" id="dyq-e2-SWM"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -45,10 +53,13 @@
                             <constraint firstAttribute="trailing" secondItem="Uxg-yi-Qmn" secondAttribute="trailing" id="pNs-bp-Hjo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myImageView" destination="89J-Kr-Wgt" id="oEB-40-iFD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="136.5" y="138.5"/>
         </scene>
     </scenes>
     <resources>
